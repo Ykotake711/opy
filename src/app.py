@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 
+
+
 # 形状パラメータの設定
 w_m = 1.0  # 適宜変更
 d = 1.0  # 適宜変更
@@ -58,7 +60,7 @@ g_d=st.sidebar.slider("Distance gain",5.0,1.0,value=g_d)
 # カスタムカラーのスケール
 colorscale = [
     [0, '#ffcd94'],  # zが小さいときの色（薄だいだい色）
-    [0.9, '#ffcd94'],  # zが0.8以下のときの色（薄だいだい色）
+    [0.7, '#ffcd94'],  # zが0.8以下のときの色（薄だいだい色）
     [1, f'rgb({red_value}, 0, 0)']          # zが最大のときの色（赤色）
 ]
 
