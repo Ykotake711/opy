@@ -50,6 +50,7 @@ d=st.sidebar.slider("Mun distance",2.0,0.1,value=d)
 h_t=st.sidebar.slider("Tik constant",1.0,0.01,value=h_t)
 w_t=st.sidebar.slider("Tik distance",10000.0,10.0,value=w_t)
 red_value = st.sidebar.slider("Tik color", 0, 255, value=255)
+red_scale=st.sidebar.slider("Tik ring", 1.0, 0.1, value=0.9)
 w_d=st.sidebar.slider("Dou constant",1.0,0.01,value=w_d)
 m=st.sidebar.slider("Mass",10.0,0.1,value=m)
 c=st.sidebar.slider("Damping",5.0,0.1,value=c)
@@ -60,7 +61,7 @@ g_d=st.sidebar.slider("Distance gain",5.0,1.0,value=g_d)
 # カスタムカラーのスケール
 colorscale = [
     [0, '#ffcd94'],  # zが小さいときの色（薄だいだい色）
-    [0.7, '#ffcd94'],  # zが0.8以下のときの色（薄だいだい色）
+    [red_scale, '#ffcd94'],  # zが0.8以下のときの色（薄だいだい色）
     [1, f'rgb({red_value}, 0, 0)']          # zが最大のときの色（赤色）
 ]
 
