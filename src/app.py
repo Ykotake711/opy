@@ -59,7 +59,7 @@ g_d=st.sidebar.slider("Distance gain",5.0,1.0,value=g_d)
 colorscale = [
     [0, '#ffcd94'],  # zが小さいときの色（薄だいだい色）
     [0.9, '#ffcd94'],  # zが0.8以下のときの色（薄だいだい色）
-    [1, f'rgb({red_value}, 0, 0)']          # zが最大のときの色（赤色）
+    [2, f'rgb({red_value}, 0, 0)']          # zが最大のときの色（赤色）
 ]
 
 z_init = opp(x, y, w_m, d, h_t, w_t,  w_d) 
