@@ -87,7 +87,7 @@ layout = go.Layout(
     scene=dict(
     xaxis=dict(range=[-2, 2], autorange=False),  # x軸の範囲を設定
     yaxis=dict(range=[-2, 2], autorange=False),  # y軸の範囲を設定
-    zaxis=dict(range=[-1.5, 1], autorange=False),  # z軸の範囲を設定
+    zaxis=dict(range=[-1.5, 1.3], autorange=False),  # z軸の範囲を設定
     ),
     updatemenus=[
         dict(
