@@ -41,7 +41,7 @@ x,y=np.meshgrid(x,y)
 y_init=y
 
 
-st.title("Oppaython")
+st.title("Oppython")
 st.sidebar.title("Opparameters")
 w_m=st.sidebar.slider("Mun constant",2.0,0.1,value=w_m)
 d=st.sidebar.slider("Mun distance",2.0,0.1,value=d)
