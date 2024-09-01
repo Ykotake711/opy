@@ -81,7 +81,7 @@ initial_frame = go.Surface(x=x, y=y_init,z=z_init ,colorscale=colorscale)
 
 # レイアウト設定
 layout = go.Layout(
-    title="アニメーションサンプル",
+    title=None,
     width=800,  # グラフの幅
     height=800,  # グラフの高さ
     scene=dict(
