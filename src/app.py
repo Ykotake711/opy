@@ -60,8 +60,8 @@ g_d=st.sidebar.slider("Distance gain",5.0,1.0,value=g_d)
 
 # RGB値の計算
 r = 255 - red_value
-g = 105 - int(105 * (red_value / 255))
-b = 180 - int(180 * (red_value / 255))
+g = 90 - int(90 * (red_value / 255))
+b = 150 - int(150 * (red_value / 255))
 
 
 # カスタムカラーのスケール
