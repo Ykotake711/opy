@@ -58,11 +58,17 @@ k=st.sidebar.slider("Oppy constant",5.0,0.1,value=k)
 g_d=st.sidebar.slider("Distance gain",5.0,1.0,value=g_d)
 
 
+# RGB値の計算
+r = 255 - color_scale_value
+g = 192 - int(192 * (color_scale_value / 255))
+b = 203 - int(203 * (color_scale_value / 255))
+
+
 # カスタムカラーのスケール
 colorscale = [
     [0, '#ffcd94'],  # zが小さいときの色（薄だいだい色）
     [red_scale, '#ffcd94'],  # zが0.8以下のときの色（薄だいだい色）
-    [1, f'rgb({red_value}, 192, 203)']          # zが最大のときの色（赤色）
+    [1, f'rgb({r}, {g}, {b})']  # zが最大のときの色（ピンクから黒に変化）
 ]
 
 z_init = opp(x, y, w_m, d, h_t, w_t,  w_d) 
